@@ -1,0 +1,29 @@
+img {
+	width: 49%;
+
+}
+
+body{
+	background-color: #1D052C;
+	position: relative;
+}
+
+.button {
+	color: white;
+	border-radius: 2em;
+	background-color: #523861;
+	font-weight: bold;
+	font-size: 40px;
+	padding: 18px;
+	font-family: inherit;
+	position: fixed;
+	bottom: 100px;
+	right: 209px;
+}
+
+.button:hover {
+	cursor: pointer;
+	background-color: red;
+}
+
+

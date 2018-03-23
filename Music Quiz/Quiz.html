@@ -3,25 +3,30 @@
 <head>
 	<title>Music Game</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style_quiz.css">
 	<link rel="icon" type="image/png" href="Photo/logo.png">
-	<body>
-		<div id="background">
-			<img src="Photo/background2.jpg"> 
-			<img src="Photo/background1.jpg">
-			<img src="Photo/start.png">
-			<img src="Photo/speed.png">
+	<img src="Photo/background2.jpg"> </br>
+	<img src="Photo/background1.jpg"> </br>
+	<img src="Photo/start.png">
+	<img class ="background_quiz" src="Photo/background_quiz.jpg">
+	
+
+</head>
+<body>
+	<div id="content" >
+		<input type="text" class="question" readonly id="ques_index"></br>
+		<div class="answer">
+			<input type="button" class="item" id="ans_1" onclick="choise_color(this)">
+			<input type="button" class="item" id="ans_2" onclick="choise_color(this)"></br>
+			<input type="button" class="item" id="ans_3" onclick="choise_color(this)">
+			<input type="button" class="item" id="ans_4" onclick="choise_color(this)"></br>
+			<div class="text" id="a">A .</div>
+			<div class="text" id="b">B .</div>
+			<div class="text" id="c">C .</div>
+			<div class="text" id="d">D .</div>
 		</div>
-		<div>
-			<button class ="button">BẮT ĐẦU</button>
-		</div>
+		<input type="button" id="next_ques" value ="Tiếp Theo" onclick="next_ques()">
+	</div>
 
-
-
-
-
-
-		<script src="JS/jquery-3.3.1.min"></script>
-		<script type="text/javascript" src="JS/script.js"></script>
 	</body>
 	</html>
